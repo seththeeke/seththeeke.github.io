@@ -1,3 +1,23 @@
 html{
-	color: blue;
+	background-color: black;
+	color: white;
+}
+
+.sidebar{
+	width: 20%;
+	height: 700px;
+	border-right: thin solid white;
+}
+
+.name{
+	text-align: center;
+}
+
+.my-image{
+	display: block;
+	margin: auto;
+}
+
+.icons{
+	text-align: center;
 }
