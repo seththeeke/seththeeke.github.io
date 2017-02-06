@@ -1,11 +1,15 @@
 html{
-	background-color: black;
+	/*background-color: black;*/
 	color: white;
 }
 
 h1{
 	display: inline-block;
-	padding-left:30px;
+	max-width: 800px;
+}
+
+body{
+	background-color: black;
 }
 
 .sidebar{
@@ -15,7 +19,7 @@ h1{
 	border-right: thin solid white;
 }
 
-.name{
+.center{
 	text-align: center;
 }
 
@@ -27,4 +31,33 @@ h1{
 .icons{
 	padding: 5px;
 	text-align: center;
+}
+
+.twitter-feed-wrapper{
+	width: 235px;
+	float: right;
+}
+
+.description{
+	display: inline-block;
+	max-width: 500px;
+}
+
+.main-content{
+	width: 75%;
+	float: right;
+}
+
+.non-sense-button{
+	background-color: black;
+	color: black;
+	border: none;
+	font-size: 35px;
+	outline: none;
+	border-radius: 20px;
+}
+
+.non-sense-button:hover{
+	background-color: white;
+	cursor: pointer;
 }
