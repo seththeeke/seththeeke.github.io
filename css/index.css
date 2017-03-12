@@ -37,6 +37,10 @@ body{
 	text-align: center;
 }
 
+a{
+	text-decoration: none;
+}
+
 .twitter-feed-wrapper{
 	width: 235px;
 	float: right;
