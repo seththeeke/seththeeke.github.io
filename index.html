@@ -3,76 +3,122 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
+  <style>
+      .main-block{
+          padding-top: 50px;
+      }
+
+      .me{
+          background-image: url(images/me.jpg);
+          height: 250px;
+          width: 250px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          border-radius: 135px;
+          display: inline-block;
+          border: solid thin black;
+      }
+
+      body{
+          height: 783px;
+          width: auto;
+          background-color: #25beb7;
+          background: linear-gradient(to bottom right, #25beb7, white);
+          text-align: center;
+      }
+
+      a{
+          text-decoration: none;
+      }
+
+      .icons{
+          padding-top: 20px;
+      }
+
+      .project-pages{
+          text-align: left;
+          display: inline-block;
+      }
+
+      .github{
+          padding-top: 20px;
+      }
+
+      h3{
+          margin: 0;
+      }
+
+      .github-container{
+          display: block;
+      }
+
+      .project-page-link{
+          color: #3d33ff;
+          text-decoration: underline;
+      }
+
+      .contact{
+          position: absolute;
+          bottom: 0;
+          font-weight:bold;
+      }
+  </style>
   <body>
   <script type="text/javascript" src="javascripts/index.js"></script>
-  <div class="sidebar">
-    <h2 class="center">Seth Patrick Theeke</h2>
-    <img class="my-image" src="images/me.jpg" alt="Me" height="150" width="150">
-    <div class="icons">
-        <a href="https://twitter.com/Theekenator">
-            <img class="icon" src="images/social-media/svg/twitter.svg" alt="Twitter" height="20" width="20">
-        </a>
-        <a href="https://www.linkedin.com/in/sptheeke">
-            <img class="icon" src="images/social-media/svg/linkedin.svg" alt="LinkedIn" height="20" width="20">
-        </a>
-    </div>
-    <div class="center">Software Engineer</div>
-    <div class="center">West Virginia University Grad</div>
-      <ul>Interests
-          <li>Web Development</li>
-          <li>Soccer</li>
-          <li>Robotics</li>
-          <li>Fitness</li>
-          <li>Nutrition</li>
-          <li>Teaching</li>
-      </ul>
-      <ul>Project Pages
-          <li>
-            <a href="https://seththeeke.github.io/nonsense-galore" class="project-page-link">
-              Nonsense Galore
-            </a>
-          </li>
-          <li>
+  <div class="main-block">
+      <div class="me"></div>
+      <div class="icons">
+          <a href="https://twitter.com/Theekenator">
+              <img class="icon" src="images/social-media/svg/twitter.svg" alt="Twitter" height="40" width="40">
+          </a>
+          <a href="https://www.linkedin.com/in/sptheeke">
+              <img class="icon" src="images/social-media/svg/linkedin.svg" alt="LinkedIn" height="40" width="40">
+          </a>
+      </div>
+      <h1>Seth Patrick Theeke</h1>
+      <div>Software Engineer</div>
+      <div>West Virginia University Grad</div>
+      <a href="https://www.github.com/seththeeke">
+          <img class="icon github" src="images/github.png" alt="Github" height="30" width="30">
+      </a>
+      <div class="github-container">
+          <div class="project-pages">
+              <h3>Check out my project pages</h3>
               <a href="https://seththeeke.github.io/bookshelf" class="project-page-link">
                   My Bookshelf
+              </a><br>
+              <a href="https://seththeeke.github.io/nonsense-galore" class="project-page-link">
+                  Nonsense Galore
               </a>
-          </li>
-      </ul>
-  </div>
-  <div class="main-content">
-      <div class="twitter-feed-wrapper">
-          <a class="twitter-timeline" data-height="800" href="https://twitter.com/Arsenal">Tweets by Arsenal</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
       </div>
-      <h1>Sorry, I'm dumb right now and am working on content to post, enjoy the most disappointing club in the world's twitter feed while I think of stuffs to put --></h1>
-      <p class="description">This site is my first experiment with github pages so it will probably just have nonsense(like Arsenal's twitter feed) on it until I come up with some ideas for some project pages</p>
-      <p class="description">Below is more nonsense, my group's senior design project video for our robotics competition, made a vacuum into a remote controlled robot</p>
-      <button class="non-sense-button" onclick="nonSenseButtonClick()">Nonsense Button!</button>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/mMk4r8FtRng" frameborder="0" allowfullscreen></iframe>
+      <div class="contact">Contact: seththeeke@gmail.com</div>
   </div>
   </body>
-  <script type="text/javascript">
-      var nonsense = false;
-      var interval;
-      function nonSenseButtonClick(){
-          nonsense = !nonsense;
-          if (nonsense){
-              console.log("NONSENSE!!!!");
-              var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+  <!--Leavuing this script here before moving it to nonsense galore repo-->
+  <!--<script type="text/javascript">-->
+      <!--var nonsense = false;-->
+      <!--var interval;-->
+      <!--function nonSenseButtonClick(){-->
+          <!--nonsense = !nonsense;-->
+          <!--if (nonsense){-->
+              <!--console.log("NONSENSE!!!!");-->
+              <!--var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];-->
 
-              var i = 1;
+              <!--var i = 1;-->
 
-              interval = window.setInterval(function(){
-                  document.body.style.backgroundColor = colors[i];
-                  i++;
-                  if (i === colors.length){
-                      i=0;
-                  }
-              }, 100);
-          }
-          else{
-              clearInterval(interval);
-              document.body.style.backgroundColor = "black";
-          }
-      }
-  </script>
+              <!--interval = window.setInterval(function(){-->
+                  <!--document.body.style.backgroundColor = colors[i];-->
+                  <!--i++;-->
+                  <!--if (i === colors.length){-->
+                      <!--i=0;-->
+                  <!--}-->
+              <!--}, 100);-->
+          <!--}-->
+          <!--else{-->
+              <!--clearInterval(interval);-->
+              <!--document.body.style.backgroundColor = "black";-->
+          <!--}-->
+      <!--}-->
+  <!--</script>-->
 </html>
