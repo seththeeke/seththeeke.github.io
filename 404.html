@@ -1,70 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
 </head>
 <style>
-    /*.main-block{*/
-        /*padding-top: 50px;*/
-    /*}*/
+    h1{
+        margin: 0;
+    }
 
-    /*.me{*/
-        /*background-image: url(images/me.jpg);*/
-        /*height: 250px;*/
-        /*width: 250px;*/
-        /*background-size: 100%;*/
-        /*background-repeat: no-repeat;*/
-        /*border-radius: 135px;*/
-        /*display: inline-block;*/
-        /*border: solid thin black;*/
-    /*}*/
+    body{
+        height: 783px;
+        width: auto;
+        text-align: center;
+        animation: background 10s cubic-bezier(1,0,0,1) infinite;
+        font-family: 'Roboto', sans-serif;
+    }
 
-    /*body{*/
-        /*height: 783px;*/
-        /*width: auto;*/
-        /*background-color: #25beb7;*/
-        /*background: linear-gradient(to bottom right, #25beb7, white);*/
-        /*text-align: center;*/
-    /*}*/
+    @keyframes background {
+        0% { background-color: #60fff3; }
+        20% { background-color: #add1ff; }
+        40% { background-color: #e5b4ff; }
+        60% { background-color: #ffb7cc; }
+        80% { background-color: #ffdea0; }
+        100% { background-color: #c9ff99; }
+    }
 
-    /*a{*/
-        /*text-decoration: none;*/
-    /*}*/
+    .fourOfour{
+        font-size: 200px;
+        padding-top: 50px;
+    }
 
-    /*.icons{*/
-        /*padding-top: 20px;*/
-    /*}*/
+    .my-website{
+        padding-top: 50px;
+    }
 
-    /*.project-pages{*/
-        /*text-align: left;*/
-        /*display: inline-block;*/
-    /*}*/
-
-    /*.github{*/
-        /*padding-top: 20px;*/
-    /*}*/
-
-    /*h3{*/
-        /*margin: 0;*/
-    /*}*/
-
-    /*.github-container{*/
-        /*display: block;*/
-    /*}*/
-
-    /*.project-page-link{*/
-        /*color: #3d33ff;*/
-        /*text-decoration: underline;*/
-    /*}*/
-
-    /*.contact{*/
-        /*position: absolute;*/
-        /*bottom: 0;*/
-        /*font-weight:bold;*/
-    /*}*/
 </style>
-<body>
-<h1>404, Page Not Found</h1>
-<h4>Still working on a cool 404 page</h4>
+<body id="body">
+    <div class="fourOfour">
+        404
+    </div>
+    <img src="images/not-the-page.jpg">
+    <div>This is not the page you are looking for</div>
+    <div class="my-website">
+        <a href="https://seththeeke.github.io">
+            seththeeke.github.io
+        </a>
+    </div>
 </body>
+
+<script>
+</script>
 </html>
