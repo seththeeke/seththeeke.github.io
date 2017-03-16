@@ -5,7 +5,7 @@
   </head>
   <style>
       .main-block{
-          padding-top: 50px;
+          padding-top: 45px;
       }
 
       .me{
@@ -20,7 +20,7 @@
       }
 
       body{
-          height: 783px;
+          min-height: 783px;
           width: auto;
           background-color: #25beb7;
           background: linear-gradient(to bottom right, #25beb7, white);
@@ -36,8 +36,8 @@
       }
 
       .project-pages{
-          text-align: left;
-          display: inline-block;
+          text-align: center;
+          display: block;
       }
 
       .github{
@@ -55,12 +55,25 @@
       .project-page-link{
           color: #3d33ff;
           text-decoration: underline;
+          display: block;
       }
 
       .contact{
           position: absolute;
-          bottom: 0;
+          top: 0;
           font-weight:bold;
+      }
+
+      .giphy-embed {
+          width: 400px;
+          height: 200px;
+          overflow: hidden;
+      }
+
+      .project-gif-wrapper{
+          text-align: center;
+          display: inline-block;
+          padding: 0 10px;
       }
   </style>
   <body>
@@ -81,20 +94,27 @@
       <a target="_blank" href="https://www.github.com/seththeeke">
           <img class="icon github" src="images/github.png" alt="Github" height="30" width="30">
       </a>
+      <h3>Check out my project pages</h3>
       <div class="github-container">
           <div class="project-pages">
-              <h3>Check out my project pages</h3>
-              <a target="_blank" href="https://seththeeke.github.io/bookshelf" class="project-page-link">
-                  My Bookshelf
-              </a>
-              <br>
-              <a target="_blank" href="https://seththeeke.github.io/arsenal" class="project-page-link">
+              <div class="project-gif-wrapper">
+                  <a target="_blank" href="https://seththeeke.github.io/bookshelf" class="project-page-link">
+                      My Bookshelf
+                  </a>
+                  <iframe src="images/bookshelf-gif.gif" frameBorder="0" class="giphy-embed" scrolling="no"></iframe>
+              </div>
+              <div class="project-gif-wrapper">
+                  <a target="_blank" href="https://seththeeke.github.io/arsenal" class="project-page-link">
                   All Things Arsenal
-              </a>
-              <br>
-              <a target="_blank" href="https://seththeeke.github.io/nonsense-galore" class="project-page-link">
+                  </a>
+                  <iframe src="images/arsenal-gif.gif" frameBorder="0" class="giphy-embed" scrolling="no"></iframe>
+              </div>
+              <div class="project-gif-wrapper">
+                  <a target="_blank" href="https://seththeeke.github.io/nonsense-galore" class="project-page-link">
                   Nonsense Galore
-              </a>
+                  </a>
+                  <iframe src="images/nonsense-gif.gif" frameBorder="0" class="giphy-embed" scrolling="no"></iframe>
+              </div>
           </div>
       </div>
       <div class="contact">Contact: seththeeke@gmail.com</div>
