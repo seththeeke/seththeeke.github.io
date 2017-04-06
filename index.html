@@ -8,7 +8,7 @@
           padding-top: 45px;
       }
 
-      .me{
+      #me{
           background-image: url(images/me.jpg);
           height: 250px;
           width: 250px;
@@ -17,6 +17,10 @@
           border-radius: 135px;
           display: inline-block;
           border: solid thin black;
+      }
+
+      #me:hover{
+          cursor:pointer;
       }
 
       body{
@@ -79,7 +83,8 @@
   <body>
   <script type="text/javascript" src="javascripts/index.js"></script>
   <div class="main-block">
-      <div class="me"></div>
+      <iframe id="whiteAndNerdy" width="0" height="0" src="https://www.youtube.com/embed/N9qYF9DZPdw" frameborder="0" hidden></iframe>
+      <div id="me" onclick="_coolStuff()"></div>
       <div class="icons">
           <a target="_blank" href="https://twitter.com/Theekenator">
               <img class="icon" src="images/social-media/svg/twitter.svg" alt="Twitter" height="40" width="40">
@@ -120,4 +125,11 @@
       <div class="contact">Contact: seththeeke@gmail.com</div>
   </div>
   </body>
+
+  <script>
+      function _coolStuff(){
+          document.getElementById("me").style.backgroundImage = "url(images/me-with-glasses.jpg)";
+          document.getElementById("whiteAndNerdy").src = "https://www.youtube.com/embed/N9qYF9DZPdw?autoplay=1&start=21";
+      }
+  </script>
 </html>
