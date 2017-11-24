@@ -36,7 +36,6 @@
           margin: 0;
       }
 
-
       body{
           min-height: 783px;
           width: auto;
@@ -64,6 +63,8 @@
 
       .icon{
           padding: 5px;
+          height: 40px;
+          width: 40px;
       }
 
       .giphy-embed {
@@ -151,6 +152,51 @@
             display: block;
       }
 
+      /* Mobile */
+      @media only screen 
+      and (min-device-width : 320px) 
+      and (max-device-width : 667px)
+      and (orientation : portrait) {
+        h1 {
+          font-size: 50px;
+          margin-bottom: 10px;
+        }
+
+        body{
+          min-height: 1800px;
+          background-size: cover;
+        }
+
+        #me{
+          background-image: url(images/me.jpg);
+          height: 400px;
+          width: 400px;
+          border-radius: 200px;
+        }
+
+        .overview{
+            width: 85%;
+        }
+
+        .container a {
+          font-size: 30px;
+          padding: 14px 16px;
+        }
+
+        .sub-header{
+          font-size: 25px;
+        } 
+
+        .project-button-text {
+          font-size: 30px;
+        }
+
+        .icon {
+          height: 50px;
+          width: 50px;
+        }
+      }
+
   </style>
   <body>
   <script type="text/javascript" src="javascripts/index.js"></script>
@@ -159,7 +205,7 @@
             <a href="#">Home</a>
             <a href="Seth%20Theeke%20CV.docx">Resume</a>
             <div class="dropdown">
-                <button class="dropbtn">Projects</button>
+                <button class="dropbtn"><span class="project-button-text">Projects</span></button>
                 <div class="dropdown-content">
                     <a target="_blank" href="/arsenal" class="anchor-stuffs">
                         <div>
@@ -198,13 +244,13 @@
               <div class="sub-header">Developer | Soccer Enthusiast | Lover of Nonsense</div>
               <div class="icons">
                   <a target="_blank" href="https://twitter.com/Theekenator">
-                      <img class="icon" src="images/social-media/svg/twitter.svg" alt="Twitter" height="40" width="40">
+                      <img class="icon" src="images/social-media/svg/twitter.svg" alt="Twitter">
                   </a>
                   <a target="_blank" href="https://www.linkedin.com/in/sptheeke">
-                      <img class="icon" src="images/social-media/svg/linkedin.svg" alt="LinkedIn" height="40" width="40">
+                      <img class="icon" src="images/social-media/svg/linkedin.svg" alt="LinkedIn">
                   </a>
                   <a target="_blank" href="https://www.github.com/seththeeke">
-                    <img class="icon" src="images/github.png" alt="Github" height="40" width="40">
+                    <img class="icon" src="images/github.png" alt="Github">
                   </a>
               </div>
           </div>
