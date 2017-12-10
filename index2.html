@@ -286,6 +286,13 @@
               </div>
           </div>
       </div>
+      <div id="projects" class="projects-wrapper">
+        <div class="projects-block">
+          <h1>Projects</h1>
+          <h3>Nonsense Galore</h3>
+          <iframe src="images/nonsense-gif.gif" frameBorder="0" class="giphy-embed" scrolling="no"></iframe>
+        </div>
+      </div>
   </div>
   </body>
 
@@ -294,5 +301,15 @@
           document.getElementById("me").style.backgroundImage = "url(images/me-with-glasses.jpg)";
           document.getElementById("whiteAndNerdy").src = "https://www.youtube.com/embed/N9qYF9DZPdw?autoplay=1&start=21";
       }
+  </script>
+  <script>
+  var controller = new ScrollMagic.Controller();
+  // attach a trigger to a div or not and set duration of "magic"
+  var scene = new ScrollMagic.Scene({duration: 100})
+  // var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 100})
+          // .setTween("#projects", {display: "block", opacity: "0%"})
+          .setTween("#projects", {opacity: "1"})
+          .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+          .addTo(controller);          
   </script>
 </html>
